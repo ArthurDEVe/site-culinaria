@@ -1,0 +1,177 @@
+/* Reset básico para remover margens, preenchimentos e bordas */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Remover o estilo padrão de tipografia */
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 100%;
+    font-family: sans-serif;
+    color: inherit;
+}
+
+/* Definir largura de todos os elementos de mídia */
+img,
+video,
+canvas,
+svg,
+iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remover listas de estilo */
+ul, ol, menu {
+    list-style: none;
+}
+
+/* Remover cotações padrão de blockquotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+/* Garantir que tabelas tenham uma estrutura de exibição consistente */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* Redefinir bordas de elementos de formulário e estilos */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    outline: none;
+    resize: none;
+    appearance: none;
+}
+
+/* Redefinir para botões */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+    appearance: none;
+}
+
+/* Definir para campos de texto e textarea */
+textarea {
+    overflow: auto;
+}
+
+/* Remover sublinhado padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remover outline visual em elementos focados */
+:focus {
+    outline: 0;
+}
+
+/* Garantir que figuras não tenham margem padrão */
+figure {
+    margin: 0;
+}
+
+/* Remover estilo padrão de campos de formulários */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+}
+
+/* Definir exibição flexível para elementos HTML5 em navegadores antigos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Garantir que o atributo `hidden` realmente esconda elementos */
+[hidden] {
+    display: none !important;
+}
+
+/* Definir largura padrão para embedded media */
+embed,
+object,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Redefinir alinhamento de campos e botões */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    color: inherit;
+}
+
+/* Forçar alinhamento para campos e botões */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Remover sublinhado de links visitados */
+a:visited {
+    color: inherit;
+}
+
+/* Forçar largura total para botões e campos dentro de containers */
+button,
+input,
+select,
+textarea {
+    width: 100%;
+}
+
+/* Reset de bordas em iFrames */
+iframe {
+    border: 0;
+}
